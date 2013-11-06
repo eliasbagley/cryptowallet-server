@@ -7,8 +7,7 @@ app.get('/', function(request, response) {
     response.send("Hello World!");
 });
 
-var port = process.env.port || 5000;
 
-app.listen(port, function() {
+app.listen(process.env.PORT, function() {
     console.log("Listening on " + port);
 });
